@@ -3,5 +3,6 @@ $Kir_var="Kirill";
 $H_var="Hello";
 $H2_var="How are you?";
 echo $H_var $Kir_var, H2_var;
+echo "I'm fine";
 ?>
 
