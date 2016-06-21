@@ -9,7 +9,6 @@ $menu = [
     ['link'=>'/news', 'title'=>'News'],
     ['link'=>'/contacts', 'title'=>'Write to us']
 ];
-$n=5;
 function showMenu($menuArray,$n=10)
 {
     echo '<ul>';
@@ -23,7 +22,6 @@ function showMenu($menuArray,$n=10)
     return showMenu($menuArray,$n-1);
     else
     return 1;
-  
 }
 echo showMenu($menu);
 ?>
