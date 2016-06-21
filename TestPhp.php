@@ -1,9 +1,10 @@
 <?php
-$a="Hello";
-echo gettype($a), "<br>";
-$b=127;
-echo gettype($b),"<br>";
-$c=true;
-echo gettype($c) ,"<br>";
-echo putty changes;
+$Kir=array();
+$Kir=['One'=>1,'Two'=>2,'Three'=>3];
+$a=$Kir['One'];
+$b=$Kir ['Two'];
+$c=$Kir ['Three'];
+echo "$a <br> $b  $c";
+
+
 
