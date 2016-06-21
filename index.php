@@ -15,10 +15,10 @@ function showMenu($menuArray,$n=10)
     foreach($menuArray AS $keyl=>$item)
     {
      echo '<li><a href="'.$item['link'].'">'.$item['title'].'</a>
-               <a href="'.$item['children'].'">'.$item['link'].'</a>>
-           <li>
-               <a href="'.$item['link'].'">'.$item['title'].'</a>
-           </li>
+               <a href="'.$item['children'].'">
+          ' <li><a href="'.$item['link'].'">'.$item['title'].'</a> 
+         </a>
+           </li>'
            </li>';
     }
     echo '</ul>';
