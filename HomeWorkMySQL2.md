@@ -1,7 +1,7 @@
 SELECT *
 FROM `authors`
 ORDER BY name
-----------------------------------
+/r
 SELECT name
 FROM `authors`
 WHERE name LIKE 'A%'
