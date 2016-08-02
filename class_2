@@ -1,0 +1,41 @@
+<?php
+abstract class Zoo
+{
+  private $KindOfAnimal;
+  private $NameOfAnimal;
+  protected $number;
+  abstract public function GetKind();
+  abstract public function SetKind($KindOfAnimal);
+  public function SetAmountAnimal($num)
+  {
+	  $this->number=$num;
+  }
+  };
+ class ZooNumbOne extends Zoo
+  {
+     public $KindOfAnimal='monkey';
+    private $NameOfAnimal='lemur';
+	public $ColorOfAnimal;
+	public $SizeOfAnimal;
+	public $WeightOfAnimal;
+	public function GetKind()
+  {
+	
+  }
+    public function SetKind($KindOfAnimal)
+  {
+	  $this ->KindOfAnimal=$KindOfAnimal;
+  }
+  public function __construct ($ColorOfAnimal='yellow',$SizeOfAnimal=10,$WeightOfAnimal=5)
+  {
+  $this ->ColorOfAnimal=$ColorOfAnimal;
+  $this ->SizeOfAnimal=$SizeOfAnimal;
+  $this ->WeightOfAnimal=$WeightOfAnimal;
+  }
+  };
+  $animal1=new ZooNumbOne;
+  $animal1->SetKind('dog');
+  echo $animal1->KindOfAnimal.' ';
+  echo $animal1->ColorOfAnimal.' ';
+  echo $animal1->SizeOfAnimal.'kg';
+   ?>
